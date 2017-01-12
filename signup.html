@@ -8,13 +8,9 @@
   <link rel="icon" href="img/title-icon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="dist/semantic.min.js"></script>
-<script src="js/script.js"></script>
 </head>
-<body style="background:url('img/disney.jpg');background-size:100% 100%;">
-
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<body  style="background:url('img/disney.jpg');background-size:100% 100%;">
   <header class="ui grid">
     <div class="computer tablet only row">
     <nav class="ui five item stackable pointing menu top fixed">
@@ -24,6 +20,7 @@
           <a href="entertainment.html" class="item">Entertainment</a>
           <a href="signup.html" class="active item">Sign Up/Sign In</a>
     </nav>
+
     </div>
     <div class="mobile only row">
       <div class="ui basic top fixed four item menu">
@@ -32,7 +29,6 @@
         <i class="sidebar icon right aligned"></i>
         </a>
       </div>
-    </div>
       <nav class="ui four item vertical pointing menu sidebar right stackable">
             <a href="index.html" class="item">Characters</a>
             <a href="activities.html" class="item">Activities</a>
@@ -43,9 +39,13 @@
   </header>
 
 
-              <div style="margin-top:200px;margin-left:30%;margin-right:5%" class="ui inverted green massive button" onClick='signup()';>Sign Up</div>
-              <div class="ui inverted blue massive button" onClick='signin()';>Sign In</div>
-
+        <div class="ui modal sign">
+          <div class="header">Sign Up/Sign In</div>
+          <div class="content">
+            <a href="#"><button class="ui basic button green center aligned" onclick="signup();">Sign Up</button></a>
+            <a href="#"><button class="ui basic button blue center aligned" onclick="signin();">Sign In</button></a>
+          </div>
+        </div>
 
         <div class="ui modal signup">
           <div class="header">Sign Up</div>
@@ -101,5 +101,10 @@
             </form>
         </div>
       </div>
+      
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="dist/semantic.min.js"></script>
+      <script src="js/script.js"></script>
+
   </body>
   </html>

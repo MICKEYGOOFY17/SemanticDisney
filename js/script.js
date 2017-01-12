@@ -47,6 +47,9 @@ $(document).ready(function(){
     $('.done').modal('show');
 })
 
+$(document).ready(function(){
+    $('.sign').modal('show');
+})
 
 function done() {
   return true;
