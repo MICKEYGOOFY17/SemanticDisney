@@ -13,6 +13,28 @@ $('.signin').modal('show');
 $('.ui.checkbox').checkbox();
 }
 
+function check() {
+  $('.inform')
+  .form({
+    fields: {
+      username : 'empty',
+      password : ['minLength[6]', 'empty'],
+    }
+  });
+}
+
+function checksign() {
+  $('.upform')
+  .form({
+    fields: {
+      username : 'empty',
+      password : ['minLength[6]', 'empty'],
+      email : 'empty',
+      gender   : 'empty',
+      terms    : 'checked'
+    }
+  });
+}
 
 $(document).ready(function(){
 $('#toggle').click(function(){
