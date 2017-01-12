@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Disney Park</title>
+  <link rel="icon" href="img/title-icon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="dist/semantic.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body style="background:url('img/disney.jpg');background-size:100% 100%;">
+
+  <header class="ui grid">
+    <div class="computer tablet only row">
+    <nav class="ui five item stackable pointing menu top fixed">
+          <a href="#" class="item">  <img src="img/main-icon.png" alt="Disneyland Paris" id="icon" class="column"/></a>
+          <a href="index.html" class="item">Characters</a>
+          <a href="activities.html" class="item">Activities</a>
+          <a href="entertainment.html" class="item">Entertainment</a>
+          <a href="signup.html" class="active item">Sign Up/Sign In</a>
+    </nav>
+    </div>
+    <div class="mobile only row">
+      <div class="ui basic top fixed four item menu">
+        <a href="#" class="item">  <img src="img/main-icon.png" alt="Disneyland Paris" id="icon"/></a>
+        <a href="#" id="toggle" class="item right">
+        <i class="sidebar icon right aligned"></i>
+        </a>
+      </div>
+    </div>
+      <nav class="ui four item vertical pointing menu sidebar right stackable">
+            <a href="index.html" class="item">Characters</a>
+            <a href="activities.html" class="item">Activities</a>
+            <a href="entertainment.html" class="item">Entertainment</a>
+            <a href="signup.html" class="active item">Sign Up/Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+
+              <div style="margin-top:200px;margin-left:30%;margin-right:5%" class="ui inverted green massive button" onClick='signup()';>Sign Up</div>
+              <div class="ui inverted blue massive button" onClick='signin()';>Sign In</div>
+
+
+        <div class="ui modal signup">
+          <div class="header">Sign Up</div>
+          <div class="content">
+            <form class="ui form upform">
+              <div class="field">
+                <label>Username</label>
+                <input name="username" type="text">
+              </div>
+              <div class="field">
+                <label for="gender">Gender</label>
+                <select class="ui dropdown" name="gender">
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input name="email" type="email">
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input name="password" type="password">
+              </div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input name="terms" type="checkbox">
+                  <label>I agree to the terms and conditions</label>
+                </div>
+              </div>
+              <div class="ui fluid submit green button" onclick="checksign();">Submit</div>
+              <div class="ui error message"></div>
+            </form>
+        </div>
+      </div>
+
+
+        <div class="ui modal signin">
+          <div class="header">Sign In</div>
+          <div class="content">
+            <form class="ui form inform">
+              <div class="field">
+                <label>Username</label>
+                <input name="username" type="text">
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input name="password" type="password">
+              </div>
+              <div class="inline field">
+                <div class="ui checkbox">
+                  <input name="terms" type="checkbox">
+                  <label>Remember username?</label>
+                </div>
+              </div>
+              <div class="ui fluid submit green button" onclick="check();">Submit</div>
+              <div class="ui error message"></div>
+            </form>
+        </div>
+      </div>
+  </body>
+  </html>
