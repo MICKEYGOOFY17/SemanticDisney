@@ -1,3 +1,14 @@
+/*body background*/
+body{
+  background: url("../img/background2.jpg");
+}
+
+.container
+{
+  background: white;
+}
+
+
 /*Text font from google and margin*/
 
 #font {
@@ -76,4 +87,13 @@ section ul li {
 
 header a {
     font-family: 'Pacifico', cursive !important;
+}
+
+@media screen and (min-width:800px)
+{
+.ui.modal
+{
+    width: 30%;
+    margin-left: -10%;
+}
 }
